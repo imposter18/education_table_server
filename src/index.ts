@@ -1,11 +1,6 @@
-import * as dotenv from "dotenv";
-import path from "path";
 import cors from "cors";
-import mongoose from "mongoose";
 import express from "express";
-import router from "./router/router";
 
-dotenv.config();
 
 const PORT = process.env.PORT || 5000;
 const URL = process.env.DB_URL || "";
@@ -21,12 +16,16 @@ app.use(
 
 app.use(express.json());
 
-app.use("/api", router);
+// app.use("/api", router);
+
+app.get('/', (req, res) => {
+	res.send(`Hello, World!`);
+});
 
 const start = async () => {
 	try {
-		mongoose.set("strictQuery", false);
-		mongoose.connect(URL);
+		// mongoose.set("strictQuery", false);
+		// mongoose.connect(URL);
 		app.listen(PORT, () => {
 			console.log("server started on PORT =", PORT);
 		});
