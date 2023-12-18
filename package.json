@@ -2,7 +2,7 @@
 	"name": "education_table_server",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "app.js",
 	"scripts": {
 		"dev": "npx nodemon",
 		"build": "rimraf ./build && npx tsc ",
