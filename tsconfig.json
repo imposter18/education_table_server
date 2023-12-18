@@ -1,13 +1,12 @@
 {
 	"compilerOptions": {
 		"target": "es5",
-		"module": "amd",
+		"module": "NodeNext",
 		"outDir": "./build",
 		"rootDir": "./src",
 		"strict": true,
 		"esModuleInterop": true,
 		"allowJs": true,
-		"outFile": "./build/app.js"
 	},
 	"exclude": ["node_modules"],
 	"ts-node": {

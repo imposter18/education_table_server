@@ -1,6 +1,8 @@
+import dotenv from 'dotenv';
 import cors from "cors";
 import express from "express";
 
+dotenv.config();
 
 const PORT = process.env.PORT || 5000;
 const URL = process.env.DB_URL || "";
