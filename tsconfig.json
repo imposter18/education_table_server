@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"target": "es5",
 		"module": "NodeNext",
-		"outDir": "",
+		"outDir": "./build",
 		"rootDir": "./src",
 		"strict": true,
 		"esModuleInterop": true,

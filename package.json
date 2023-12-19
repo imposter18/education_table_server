@@ -2,11 +2,11 @@
 	"name": "education_table_server",
 	"version": "1.0.0",
 	"description": "",
-	"main": "app.js",
+	"main": "/build/app.js",
 	"scripts": {
 		"dev": "npx nodemon",
 		"build": "npx tsc",
-		"start": "node app.js"
+		"start": "node build/app"
 	},
 	"repository": {
 		"type": "git",
